@@ -1,0 +1,1816 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>@font-face {
+  font-family: octicons-link;
+  src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAZwABAAAAAACFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEU0lHAAAGaAAAAAgAAAAIAAAAAUdTVUIAAAZcAAAACgAAAAoAAQAAT1MvMgAAAyQAAABJAAAAYFYEU3RjbWFwAAADcAAAAEUAAACAAJThvmN2dCAAAATkAAAABAAAAAQAAAAAZnBnbQAAA7gAAACyAAABCUM+8IhnYXNwAAAGTAAAABAAAAAQABoAI2dseWYAAAFsAAABPAAAAZwcEq9taGVhZAAAAsgAAAA0AAAANgh4a91oaGVhAAADCAAAABoAAAAkCA8DRGhtdHgAAAL8AAAADAAAAAwGAACfbG9jYQAAAsAAAAAIAAAACABiATBtYXhwAAACqAAAABgAAAAgAA8ASm5hbWUAAAToAAABQgAAAlXu73sOcG9zdAAABiwAAAAeAAAAME3QpOBwcmVwAAAEbAAAAHYAAAB/aFGpk3jaTY6xa8JAGMW/O62BDi0tJLYQincXEypYIiGJjSgHniQ6umTsUEyLm5BV6NDBP8Tpts6F0v+k/0an2i+itHDw3v2+9+DBKTzsJNnWJNTgHEy4BgG3EMI9DCEDOGEXzDADU5hBKMIgNPZqoD3SilVaXZCER3/I7AtxEJLtzzuZfI+VVkprxTlXShWKb3TBecG11rwoNlmmn1P2WYcJczl32etSpKnziC7lQyWe1smVPy/Lt7Kc+0vWY/gAgIIEqAN9we0pwKXreiMasxvabDQMM4riO+qxM2ogwDGOZTXxwxDiycQIcoYFBLj5K3EIaSctAq2kTYiw+ymhce7vwM9jSqO8JyVd5RH9gyTt2+J/yUmYlIR0s04n6+7Vm1ozezUeLEaUjhaDSuXHwVRgvLJn1tQ7xiuVv/ocTRF42mNgZGBgYGbwZOBiAAFGJBIMAAizAFoAAABiAGIAznjaY2BkYGAA4in8zwXi+W2+MjCzMIDApSwvXzC97Z4Ig8N/BxYGZgcgl52BCSQKAA3jCV8CAABfAAAAAAQAAEB42mNgZGBg4f3vACQZQABIMjKgAmYAKEgBXgAAeNpjYGY6wTiBgZWBg2kmUxoDA4MPhGZMYzBi1AHygVLYQUCaawqDA4PChxhmh/8ODDEsvAwHgMKMIDnGL0x7gJQCAwMAJd4MFwAAAHjaY2BgYGaA4DAGRgYQkAHyGMF8NgYrIM3JIAGVYYDT+AEjAwuDFpBmA9KMDEwMCh9i/v8H8sH0/4dQc1iAmAkALaUKLgAAAHjaTY9LDsIgEIbtgqHUPpDi3gPoBVyRTmTddOmqTXThEXqrob2gQ1FjwpDvfwCBdmdXC5AVKFu3e5MfNFJ29KTQT48Ob9/lqYwOGZxeUelN2U2R6+cArgtCJpauW7UQBqnFkUsjAY/kOU1cP+DAgvxwn1chZDwUbd6CFimGXwzwF6tPbFIcjEl+vvmM/byA48e6tWrKArm4ZJlCbdsrxksL1AwWn/yBSJKpYbq8AXaaTb8AAHja28jAwOC00ZrBeQNDQOWO//sdBBgYGRiYWYAEELEwMTE4uzo5Zzo5b2BxdnFOcALxNjA6b2ByTswC8jYwg0VlNuoCTWAMqNzMzsoK1rEhNqByEyerg5PMJlYuVueETKcd/89uBpnpvIEVomeHLoMsAAe1Id4AAAAAAAB42oWQT07CQBTGv0JBhagk7HQzKxca2sJCE1hDt4QF+9JOS0nbaaYDCQfwCJ7Au3AHj+LO13FMmm6cl7785vven0kBjHCBhfpYuNa5Ph1c0e2Xu3jEvWG7UdPDLZ4N92nOm+EBXuAbHmIMSRMs+4aUEd4Nd3CHD8NdvOLTsA2GL8M9PODbcL+hD7C1xoaHeLJSEao0FEW14ckxC+TU8TxvsY6X0eLPmRhry2WVioLpkrbp84LLQPGI7c6sOiUzpWIWS5GzlSgUzzLBSikOPFTOXqly7rqx0Z1Q5BAIoZBSFihQYQOOBEdkCOgXTOHA07HAGjGWiIjaPZNW13/+lm6S9FT7rLHFJ6fQbkATOG1j2OFMucKJJsxIVfQORl+9Jyda6Sl1dUYhSCm1dyClfoeDve4qMYdLEbfqHf3O/AdDumsjAAB42mNgYoAAZQYjBmyAGYQZmdhL8zLdDEydARfoAqIAAAABAAMABwAKABMAB///AA8AAQAAAAAAAAAAAAAAAAABAAAAAA==) format('woff');
+}
+
+.markdown-body {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body * {
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.markdown-body a {
+  color: #4078c0;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body .select::-ms-expand {
+  opacity: 0;
+}
+
+.markdown-body .octicon {
+  font: normal normal normal 16px/1 octicons-link;
+  display: inline-block;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.markdown-body .octicon-link:before {
+  content: '\f05c';
+}
+
+.markdown-body:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body .anchor {
+  display: inline-block;
+  padding-right: 2px;
+  margin-left: -18px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #000;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h1 .anchor {
+  line-height: 1;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 .anchor {
+  line-height: 1;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h3 .anchor {
+  line-height: 1.2;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 .anchor {
+  line-height: 1.2;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h5 .anchor {
+  line-height: 1.1;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body h6 .anchor {
+  line-height: 1.1;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: #fff;
+}
+
+.markdown-body code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .pl-c {
+  color: #969896;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #0086b3;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #795da3;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #333;
+}
+
+.markdown-body .pl-ent {
+  color: #63a35c;
+}
+
+.markdown-body .pl-k {
+  color: #a71d5d;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #183691;
+}
+
+.markdown-body .pl-v {
+  color: #ed6a43;
+}
+
+.markdown-body .pl-id {
+  color: #b52a1d;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b52a1d;
+  color: #f8f8f8;
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #63a35c;
+  font-weight: bold;
+}
+
+.markdown-body .pl-ml {
+  color: #693a17;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #1d3e81;
+  font-weight: bold;
+}
+
+.markdown-body .pl-mq {
+  color: #008080;
+}
+
+.markdown-body .pl-mi {
+  color: #333;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #333;
+  font-weight: bold;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.markdown-body .pl-mdr {
+  color: #795da3;
+  font-weight: bold;
+}
+
+.markdown-body .pl-mo {
+  color: #1d3e81;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 0.35em 0.25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body :checked+.radio-label {
+  z-index: 1;
+  position: relative;
+  border-color: #4078c0;
+}
+</style><style>/*
+
+github.com style (c) Vasily Polovnyov <vast@whiteants.net>
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #333;
+  background: #f8f8f8;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #998;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+  color: #333;
+  font-weight: bold;
+}
+
+.hljs-number,
+.hljs-literal,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag .hljs-attr {
+  color: #008080;
+}
+
+.hljs-string,
+.hljs-doctag {
+  color: #d14;
+}
+
+.hljs-title,
+.hljs-section,
+.hljs-selector-id {
+  color: #900;
+  font-weight: bold;
+}
+
+.hljs-subst {
+  font-weight: normal;
+}
+
+.hljs-type,
+.hljs-class .hljs-title {
+  color: #458;
+  font-weight: bold;
+}
+
+.hljs-tag,
+.hljs-name,
+.hljs-attribute {
+  color: #000080;
+  font-weight: normal;
+}
+
+.hljs-regexp,
+.hljs-link {
+  color: #009926;
+}
+
+.hljs-symbol,
+.hljs-bullet {
+  color: #990073;
+}
+
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #0086b3;
+}
+
+.hljs-meta {
+  color: #999;
+  font-weight: bold;
+}
+
+.hljs-deletion {
+  background: #fdd;
+}
+
+.hljs-addition {
+  background: #dfd;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+</style><style>.markdown-body {
+    font-size: 11px;
+}
+
+img.emoji-img.emoji {
+  max-width: 11px;
+  max-height: 11px;
+  vertical-align: middle;
+}
+</style>
+
+        <!--<script src=""></script>-->
+    </head>
+    <body class="markdown-body">
+        <html><head></head><body><h2 id="1-输入三个整数，按照从小到大排列并输出">1 输入三个整数，按照从小到大排列并输出</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-type">void</span> <span class="hljs-title function_">swap</span><span class="hljs-params">(<span class="hljs-type">int</span> *a,<span class="hljs-type">int</span> *b)</span>{
+    <span class="hljs-type">int</span> t=*a;*a=*b;*b=t;
+}
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> a,b,c;<span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%d%d%d"</span>,&amp;a,&amp;b,&amp;c);
+    <span class="hljs-keyword">if</span>(a&gt;b)swap(&amp;a,&amp;b);
+    <span class="hljs-keyword">if</span>(a&gt;c)swap(&amp;a,&amp;c);
+    <span class="hljs-keyword">if</span>(b&gt;c)swap(&amp;b,&amp;c);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d,%d,%d"</span>,a,b,c);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="2-输入一个实数x按照">2 输入一个实数x,按照</h2>
+<pre><code class="hljs"><span class="hljs-attribute">x</span>==<span class="hljs-number">0</span> <span class="hljs-built_in">printf</span>(<span class="hljs-string">"f(x)=0"</span>)
+<span class="hljs-attribute">x</span>!=<span class="hljs-number">0</span><span class="hljs-built_in">printf</span>(<span class="hljs-string">"f(x)=1/x"</span>);</code></pre>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">double</span> x;<span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%lf"</span>,&amp;x);
+    <span class="hljs-keyword">if</span>(x==<span class="hljs-number">0</span>)<span class="hljs-built_in">printf</span>(<span class="hljs-string">"f(%1lf)=%.1lf\n"</span>,x,x);
+    <span class="hljs-keyword">else</span> <span class="hljs-built_in">printf</span>(<span class="hljs-string">"f(%.1lf)=%.1lf\n"</span>,x,<span class="hljs-number">1</span>/x);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="3-计算12310">3 计算1!+2!+3!+…+10!</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> i,s=<span class="hljs-number">1</span>,sum=<span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">1</span>;i&lt;<span class="hljs-number">11</span>;i++){
+        s=s*i;sum=sum+s;
+    }<span class="hljs-built_in">printf</span>(<span class="hljs-string">"sum=%d\n"</span>,sum);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="4输出金字塔-n-in-110">4输出金字塔 n in [1,10]</h2>
+<pre><code class="hljs"> <span class="hljs-strong">____</span>1
+ <span class="hljs-strong">__<span class="hljs-emphasis">_22
+ _</span><span class="hljs-emphasis">_333
+ _</span>4444
+ 55555</span></code></pre>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> i,j,n,k;<span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%d"</span>,&amp;n);
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">1</span>;i&lt;=n;i++) {
+        <span class="hljs-keyword">for</span>(j=<span class="hljs-number">1</span>;j&lt;=n-i;j++)<span class="hljs-built_in">printf</span>(<span class="hljs-string">" "</span>);
+        <span class="hljs-keyword">for</span>(k=<span class="hljs-number">1</span>;k&lt;=i;k++)<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d"</span>,i);
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">"\n"</span>);
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="5-求2100内的素数">5 求2~100内的素数</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;math.h&gt;</span></span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> i,j,f;
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">2</span>;i&lt;=<span class="hljs-number">100</span>;i++){
+        f=<span class="hljs-number">1</span>;
+        <span class="hljs-keyword">for</span>(j=<span class="hljs-number">2</span>;j&lt;=<span class="hljs-built_in">sqrt</span>(i);j++){
+            <span class="hljs-keyword">if</span>(i%j==<span class="hljs-number">0</span>){
+                f=<span class="hljs-number">0</span>;<span class="hljs-keyword">break</span>;
+            }
+        }<span class="hljs-keyword">if</span>(f)<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d "</span>,i);
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="6-从键盘读入字符，统计字母，数字，空格和其他个数，收到--时结束。">6 从键盘读入字符，统计字母，数字，空格和其他个数，收到 $ 时结束。</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span> {
+    <span class="hljs-type">char</span> c;<span class="hljs-type">int</span> letters=<span class="hljs-number">0</span>,space=<span class="hljs-number">0</span>,numbers=<span class="hljs-number">0</span>,others=<span class="hljs-number">0</span>;
+    <span class="hljs-keyword">while</span>((c=getchar())!=<span class="hljs-string">'$'</span>){
+        <span class="hljs-keyword">if</span>((c&gt;=<span class="hljs-string">'a'</span>&amp;&amp;c&lt;=<span class="hljs-string">'z'</span>)||(c&gt;=<span class="hljs-string">'A'</span>&amp;&amp;c&lt;=<span class="hljs-string">'Z'</span>))letters++;
+        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(c==<span class="hljs-string">' '</span>)space++;
+        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(c&gt;=<span class="hljs-string">'0'</span>&amp;&amp;c&lt;=<span class="hljs-string">'9'</span>)numbers++;
+        <span class="hljs-keyword">else</span> others++;
+    }
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"字母%d个，数字%d,空格%d,其他%d\n"</span>,letters,numbers,space,others);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="7-输出99乘法表">7 输出99乘法表</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> i,j;<span class="hljs-comment">//%-3d,不足3个右边边补空格 3__</span>
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">1</span>;i&lt;=<span class="hljs-number">9</span>;i++){
+        <span class="hljs-keyword">for</span>(j=<span class="hljs-number">1</span>;j&lt;=i;j++){
+            <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d*%d=%-3d"</span>,j,i,j*i);
+        }<span class="hljs-built_in">printf</span>(<span class="hljs-string">"\n"</span>);
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="8-将a字符数组中的字符与字符c相符的所有元素的下标值存放在整型数组b">8 将a字符数组中的字符与字符'c'相符的所有元素的下标值存放在整型数组b</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">char</span> a[<span class="hljs-number">80</span>];<span class="hljs-type">int</span> i,b[<span class="hljs-number">80</span>],k=<span class="hljs-number">0</span>;
+    gets(a);
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">0</span>;a[i]!=<span class="hljs-string">'\0'</span>;i++){
+        <span class="hljs-keyword">if</span>(a[i]==<span class="hljs-string">'c'</span>)b[k++]=i;
+    }
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">0</span>;i&lt;k;i++)<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%3d"</span>,b[i]);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="9-定义一个含有30个整型元素的数组，按顺序分别赋予从2开始的偶数，然后按顺序，每5个数求出一个平均值，放在另一个数组中并输出。">9 定义一个含有30个整型元素的数组，按顺序分别赋予从2开始的偶数，然后按顺序，每5个数求出一个平均值，放在另一个数组中并输出。</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> a[<span class="hljs-number">30</span>],b[<span class="hljs-number">6</span>],i,j=<span class="hljs-number">0</span>,k=<span class="hljs-number">0</span>,sum=<span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">30</span>;i++,k+=<span class="hljs-number">2</span>)a[i]=<span class="hljs-number">2</span>+k;
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">30</span>;i++){
+        sum=sum+a[i];
+        <span class="hljs-keyword">if</span>((i+<span class="hljs-number">1</span>)%<span class="hljs-number">5</span>==<span class="hljs-number">0</span>){
+            b[j++]=sum/<span class="hljs-number">5</span>;sum=<span class="hljs-number">0</span>;
+        }
+    }
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">6</span>;i++)<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d\n"</span>,b[i]);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="10-按行顺序给23的二维数组赋246等偶数，按列的顺序输出该数组。">10 按行顺序给2*3的二维数组赋2,4,6等偶数，按列的顺序输出该数组。</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span> {
+    <span class="hljs-type">int</span> a[<span class="hljs-number">2</span>][<span class="hljs-number">3</span>];
+    <span class="hljs-type">int</span> i,j,kW=<span class="hljs-number">2</span>;
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">2</span>;i++)<span class="hljs-keyword">for</span>(j=<span class="hljs-number">0</span>;j&lt;<span class="hljs-number">3</span>;j++){
+        a[i][j]=k;k+=<span class="hljs-number">2</span>;
+    }
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">3</span>;i++){
+        <span class="hljs-keyword">for</span>(j=<span class="hljs-number">0</span>;j&lt;<span class="hljs-number">2</span>;j++){
+            <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%4d"</span>,a[j][i]);
+        }<span class="hljs-built_in">printf</span>(<span class="hljs-string">"\n"</span>);
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="11-给55矩阵赋值125，输出左下角三角形。">11 给5*5矩阵赋值1~25，输出左下角三角形。</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span> {
+    <span class="hljs-type">int</span> a[<span class="hljs-number">5</span>] [<span class="hljs-number">5</span>],i,j,n=<span class="hljs-number">1</span>;
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">5</span>;i++)<span class="hljs-keyword">for</span>(j=<span class="hljs-number">0</span>;j&lt;<span class="hljs-number">5</span>;j++)a[i][j]=n++;
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">5</span>;i++){
+        <span class="hljs-keyword">for</span>(j=<span class="hljs-number">0</span>;j&lt;=i;j++){
+            <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%-4d"</span>,a[i][j]);
+        }<span class="hljs-built_in">printf</span>(<span class="hljs-string">"\n"</span>);
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="12-打印螺旋矩阵，nn顺时针">12 打印螺旋矩阵，n*n顺时针</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-type">void</span> <span class="hljs-title function_">print</span><span class="hljs-params">(<span class="hljs-type">int</span> n)</span>{
+    <span class="hljs-type">int</span> a[<span class="hljs-number">10</span>][<span class="hljs-number">10</span>]={<span class="hljs-number">0</span>};<span class="hljs-type">int</span> val=<span class="hljs-number">1</span>;
+    <span class="hljs-type">int</span> top=<span class="hljs-number">0</span>,bottom=n<span class="hljs-number">-1</span>,left=<span class="hljs-number">0</span>,right=n<span class="hljs-number">-1</span>;
+    <span class="hljs-keyword">while</span>(val&lt;=n*n){
+        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=left;i&lt;=right;i++)a[top][i]=val++;
+        top++;
+        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=top;i&lt;=bottom;i++)a[i][right]=val++;
+        right--;
+        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=right;i&gt;=left;i--)a[bottom][i]=val++; 
+        bottom--;
+        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=bottom;i&gt;=top;i--)a[i][left]=val++;
+        left++;
+    }
+    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;n;i++){
+        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> j=<span class="hljs-number">0</span>;j&lt;n;j++){
+            <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%4d"</span>,a[i][j]);
+        }<span class="hljs-built_in">printf</span>(<span class="hljs-string">"\n"</span>);
+    }
+}
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> n;<span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%d"</span>,&amp;n);
+    print(n);<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="13-nn逆时针">13 n*n逆时针</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-type">void</span> <span class="hljs-title function_">print</span><span class="hljs-params">(<span class="hljs-type">int</span> n)</span>{
+    <span class="hljs-type">int</span> a[<span class="hljs-number">10</span>][<span class="hljs-number">10</span>]={<span class="hljs-number">0</span>};<span class="hljs-type">int</span> val=<span class="hljs-number">1</span>;
+    <span class="hljs-type">int</span> top=<span class="hljs-number">0</span>,bottom=n<span class="hljs-number">-1</span>,left=<span class="hljs-number">0</span>,right=n<span class="hljs-number">-1</span>;
+    <span class="hljs-keyword">while</span>(val&lt;=n*n){
+        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=right;i&gt;=left;i--)a[top][i]=val++;
+        top++;
+        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=top;i&lt;=bottom;i++)a[i][left]=val++;
+        left++;
+        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=left;i&lt;=right;i++)a[bottom][i]=val++;
+        bottom--;
+        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=bottom;i&gt;=top;i--)a[i][right]=val++;
+        right--;
+    }
+    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;n;i++){
+        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> j=<span class="hljs-number">0</span>;j&lt;n;j++){
+            <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%4d"</span>,a[i][j]);
+        }<span class="hljs-built_in">printf</span>(<span class="hljs-string">"\n"</span>);
+    }
+}
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> n;<span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%d"</span>,&amp;n);
+    print(n);<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="14-数组a中有10个整数，把a中所有的后项除前项的商取整后存入数组b并按每行3个元素的格式输出b">14 数组a中有10个整数，把a中所有的后项除前项的商取整后存入数组b,并按每行3个元素的格式输出b.</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> a[<span class="hljs-number">10</span>],b[<span class="hljs-number">10</span>];
+    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">10</span>;i++)<span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%d"</span>,&amp;a[i]);
+    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">1</span>;i&lt;<span class="hljs-number">10</span>;i++)b[i]=a[i]/a[i<span class="hljs-number">-1</span>];
+    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">1</span>;i&lt;<span class="hljs-number">10</span>;i++){
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%4d"</span>,b[i]);
+        <span class="hljs-keyword">if</span>(i%<span class="hljs-number">3</span>==<span class="hljs-number">0</span>)<span class="hljs-built_in">printf</span>(<span class="hljs-string">"\n"</span>);
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="15-读两个字符串a和b把串b的前5个字符连接到a中。若b的长度小于5则把整个b连接到a中。">15 读两个字符串a和b,把串b的前5个字符连接到a中。若b的长度小于5,则把整个b连接到a中。</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;string.h&gt;</span></span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">char</span> a[<span class="hljs-number">80</span>],b[<span class="hljs-number">80</span>];
+    <span class="hljs-type">int</span> i=<span class="hljs-number">0</span>,j;
+    gets(a);gets(b);
+    <span class="hljs-keyword">while</span>(a[i++]!=<span class="hljs-string">'\0'</span>);
+    <span class="hljs-keyword">for</span>(j=<span class="hljs-number">0</span>,i--;j&lt;<span class="hljs-number">5</span>&amp;&amp;b[j]!=<span class="hljs-string">'\0'</span>;j++){
+        a[i++]=b[j];
+    }a[i]=<span class="hljs-string">'\0'</span>;
+    <span class="hljs-built_in">puts</span>(a);<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="16-输入若干整数，其值在0到4的范围内，用-1作为输入结束的标志。统计每个整数的个数。">16 输入若干整数，其值在0到4的范围内，用-1作为输入结束的标志。统计每个整数的个数。</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> s[<span class="hljs-number">5</span>]={<span class="hljs-number">0</span>},x;
+    <span class="hljs-keyword">while</span>(<span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%d"</span>,&amp;x)==<span class="hljs-number">1</span>&amp;&amp;x!=<span class="hljs-number">-1</span>){
+        <span class="hljs-keyword">if</span>(x&gt;=<span class="hljs-number">0</span>&amp;&amp;x&lt;=<span class="hljs-number">4</span>)s[x]++;
+    }
+    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">5</span>;i++)<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d:%d个\n"</span>,i,s[i]);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="17-caddab">17 c=add(a,b).</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-type">float</span> <span class="hljs-title function_">add</span><span class="hljs-params">(<span class="hljs-type">float</span> x,<span class="hljs-type">float</span> y)</span>{
+    <span class="hljs-type">float</span> z;z=x+y;<span class="hljs-keyword">return</span> (z);
+}
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">float</span> a,b,c;<span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%f%f"</span>,&amp;a,&amp;b);c=add(a,b);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"sum=%f\n"</span>,c);<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="18-int-abbsuma。求123k">18 int a,b;b=sum(a)。求1+2+3+…+k</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">sum</span><span class="hljs-params">(<span class="hljs-type">int</span> n)</span>{
+    <span class="hljs-type">int</span> i,s=<span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">1</span>;i&lt;=n;i++)s=s+i;
+    <span class="hljs-keyword">return</span> s;
+}
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> a,b;<span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%d"</span>,&amp;a);b=sum(a);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d\n"</span>,b);<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="19-mypowxn求x的n次方">19 mypow(x,n)求x的n次方</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">mypow</span><span class="hljs-params">(<span class="hljs-type">int</span> x,<span class="hljs-type">int</span> n)</span>{
+    <span class="hljs-type">int</span> i,res=<span class="hljs-number">1</span>;
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">1</span>;i&lt;=n;i++)res*=x;
+    <span class="hljs-keyword">return</span> res;
+}
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> x,n;<span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%d%d"</span>,&amp;x,&amp;n);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d\n"</span>,mypow(x,n));<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="20-cfunab求两个数的绝对差">20 c=fun(a,b).求两个数的绝对差</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;math.h&gt;</span></span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">fun</span><span class="hljs-params">(<span class="hljs-type">int</span> x,<span class="hljs-type">int</span> y)</span>{
+    <span class="hljs-type">int</span> z;z=<span class="hljs-built_in">fabs</span>(x-y);<span class="hljs-keyword">return</span> (z);
+}
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> a=<span class="hljs-number">1</span>,b=<span class="hljs-number">5</span>,c;c=fun(a,b);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d\n"</span>,c);<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="21-求forint-i1ini2ii1">21 求for(int i=1;i&lt;=n;i++)2/(i*(i+1))</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-type">float</span> <span class="hljs-title function_">fun</span><span class="hljs-params">(<span class="hljs-type">int</span> n)</span>{
+    <span class="hljs-type">int</span> i;<span class="hljs-type">float</span> s=<span class="hljs-number">1.0</span>,t=<span class="hljs-number">1.0</span>;
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">2</span>;i&lt;=n;i++){
+        t=t+i;s=s+<span class="hljs-number">1</span>/t;
+    }<span class="hljs-keyword">return</span> s;
+}
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span> {
+    <span class="hljs-type">int</span> n;<span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%d"</span>,&amp;n);
+    <span class="hljs-type">float</span> c=fun(n);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"结果是：%f"</span>,c);<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="22-实现isprime判断a是不是素数。">22 实现isprime()判断a是不是素数。</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;math.h&gt;</span></span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">isprime</span><span class="hljs-params">(<span class="hljs-type">int</span> x)</span>{
+    <span class="hljs-type">int</span> i;
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">2</span>;i&lt;=<span class="hljs-built_in">sqrt</span>(x);i++)<span class="hljs-keyword">if</span>(x%i==<span class="hljs-number">0</span>)<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+}
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> a;<span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%d"</span>,&amp;a);
+    <span class="hljs-keyword">if</span>(isprime(a))<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d是素数\n"</span>,a);
+    <span class="hljs-keyword">else</span> <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d不是素数\n"</span>,a);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>; 
+}</code></pre>
+<h2 id="23-编写求阶乘。">23 编写求阶乘。</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span><span class="hljs-comment">//递归</span></span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">fac</span><span class="hljs-params">(<span class="hljs-type">int</span> n)</span>{
+    <span class="hljs-keyword">if</span>(n==<span class="hljs-number">1</span>||n==<span class="hljs-number">0</span>)<span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+    <span class="hljs-keyword">return</span> n*fac(n<span class="hljs-number">-1</span>);
+}
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> n;<span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%d"</span>,&amp;n);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d\n"</span>,fac(n));<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+<span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span><span class="hljs-comment">//迭代</span></span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">fac</span><span class="hljs-params">(<span class="hljs-type">int</span> n)</span>{
+    <span class="hljs-type">int</span> res=<span class="hljs-number">1</span>;
+    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">1</span>;i&lt;=n;i++)res*=i;
+    <span class="hljs-keyword">return</span> res;
+}
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> n;<span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%d"</span>,&amp;n);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d\n"</span>,fac(n));<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="24-求组合数mnm-n-mn">24 求组合数m!/(n!*(m-n)!), m&gt;n</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-type">float</span> <span class="hljs-title function_">C</span><span class="hljs-params">(<span class="hljs-type">int</span> m,<span class="hljs-type">int</span> n)</span>{
+    <span class="hljs-type">int</span> i;<span class="hljs-type">double</span> p=<span class="hljs-number">1.0</span>;
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">1</span>;i&lt;=m;i++)p=p*i;
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">1</span>;i&lt;=n;i++)p=p/i;
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">1</span>;i&lt;=m-n;i++)p=p/i;
+    <span class="hljs-keyword">return</span> p;
+}
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"P=%f\n"</span>,C(<span class="hljs-number">12</span>,<span class="hljs-number">8</span>));
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="25-求出一个实数的整数位数。12345是4个。">25 求出一个实数的整数位数。1234.5是4个。</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">count</span><span class="hljs-params">(<span class="hljs-type">int</span> n)</span>{
+    <span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;<span class="hljs-keyword">if</span>(n&lt;<span class="hljs-number">0</span>)n=-n;
+    <span class="hljs-keyword">while</span>(n&gt;<span class="hljs-number">0</span>){
+        n/=<span class="hljs-number">10</span>;i++;
+    }<span class="hljs-keyword">return</span> i;
+}
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">double</span> n;<span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%lf"</span>,&amp;n);
+    <span class="hljs-type">int</span> intPart=(<span class="hljs-type">int</span>)n;
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d\n"</span>,count(intPart));<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="26-使指针变量指向“turbo-c，输出字符串的首字符和整个字符串，用指针变量p指向并输出字符串的第5个字符。">26 使指针变量指向“Turbo C"，输出字符串的首字符和整个字符串，用指针变量p指向并输出字符串的第5个字符。</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">char</span> *a=<span class="hljs-string">"Turbo C"</span>,*p=a+<span class="hljs-number">4</span>;<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%c\n"</span>,*a);
+    <span class="hljs-built_in">puts</span>(a);<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%c\n"</span>,*p);<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="27-字符串language赋予字符串a用指针变量来输出">27 字符串"Language"赋予字符串a,用指针变量来输出</h2>
+<pre><code class="hljs"><span class="hljs-keyword">Language</span>
+nguage
+uage
+ge</code></pre>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">char</span> a[]=<span class="hljs-string">"Language"</span>,*p=a;
+    <span class="hljs-keyword">for</span>(;*p!=<span class="hljs-string">'\0'</span>;p+=<span class="hljs-number">2</span>)<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%s\n"</span>,p);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="28-输入112输出月份的英文。使用指针变量">28 输入1~12输出月份的英文。使用指针变量</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">char</span> *mons[]={<span class="hljs-string">"January"</span>,<span class="hljs-string">"February"</span>,<span class="hljs-string">"March"</span>,<span class="hljs-string">"April"</span>,<span class="hljs-string">"May"</span>,<span class="hljs-string">"June"</span>,
+                <span class="hljs-string">"July"</span>,<span class="hljs-string">"August"</span>,<span class="hljs-string">"September"</span>,<span class="hljs-string">"October"</span>,<span class="hljs-string">"November"</span>,<span class="hljs-string">"December"</span>};
+    <span class="hljs-type">int</span> m;<span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%d"</span>,&amp;m);<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%s\n"</span>,*(mons+m<span class="hljs-number">-1</span>));<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="29-利用指针从输入的字符串最后一位开始输出。">29 利用指针从输入的字符串最后一位开始输出。</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;string.h&gt;</span></span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">char</span> *<span class="hljs-built_in">string</span>,str[<span class="hljs-number">60</span>];<span class="hljs-type">int</span> n;
+    <span class="hljs-built_in">string</span>=str;<span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%s"</span>,<span class="hljs-built_in">string</span>);
+    n=<span class="hljs-built_in">strlen</span>(<span class="hljs-built_in">string</span>);
+    <span class="hljs-keyword">while</span>(n!=<span class="hljs-number">0</span>){
+        <span class="hljs-built_in">string</span>=str+n<span class="hljs-number">-1</span>;n--;<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%c"</span>,*<span class="hljs-built_in">string</span>);
+    }<span class="hljs-built_in">printf</span>(<span class="hljs-string">"\n"</span>);<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="30-读一个字符串，把字符串中偶数位的字符变成">30 读一个字符串，把字符串中偶数位的字符变成'*'.</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span> {
+    <span class="hljs-type">int</span> i;<span class="hljs-type">char</span> s[<span class="hljs-number">41</span>],*p;
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">41</span>;i++){
+        s[i]=getchar();
+        <span class="hljs-keyword">if</span>(s[i]==<span class="hljs-string">'\n'</span>)<span class="hljs-keyword">break</span>;
+    }
+    s[i]=<span class="hljs-string">'\0'</span>;p=s;i=<span class="hljs-number">0</span>;
+    <span class="hljs-keyword">while</span>(*p){
+        <span class="hljs-keyword">if</span>(i%<span class="hljs-number">2</span>==<span class="hljs-number">0</span>)*p=<span class="hljs-string">'*'</span>;
+        <span class="hljs-built_in">putchar</span>(*p);p++;i++;
+    }<span class="hljs-built_in">putchar</span>(<span class="hljs-string">'\n'</span>);<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="31-读5个字符串，找出最长的一个字符串并输出。">31 读5个字符串，找出最长的一个字符串并输出。</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span> </span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;string.h&gt;</span></span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">char</span> a[<span class="hljs-number">5</span>][<span class="hljs-number">60</span>],*p;<span class="hljs-type">int</span> i;
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">5</span>;i++)gets(a[i]);
+    p=a[<span class="hljs-number">0</span>];<span class="hljs-keyword">for</span>(i=<span class="hljs-number">1</span>;i&lt;<span class="hljs-number">5</span>;i++)<span class="hljs-keyword">if</span>(<span class="hljs-built_in">strlen</span>(p)&lt;<span class="hljs-built_in">strlen</span>(a[i]))p=a[i];
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"\nThe longest string is %s\n"</span>,p);<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="32-将数组a中的n个数逆序存放并输出。">32 将数组a中的n个数逆序存放并输出。</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span> </span>
+<span class="hljs-type">void</span> <span class="hljs-title function_">swap</span><span class="hljs-params">(<span class="hljs-type">int</span> *a,<span class="hljs-type">int</span> *b)</span>{
+    <span class="hljs-type">int</span> t=*a;*a=*b;*b=t;
+}
+<span class="hljs-type">void</span> <span class="hljs-title function_">rev</span><span class="hljs-params">(<span class="hljs-type">int</span> *a,<span class="hljs-type">int</span> size)</span>{
+    <span class="hljs-type">int</span> *st=a,*ed=a+size<span class="hljs-number">-1</span>;
+    <span class="hljs-keyword">while</span>(st&lt;ed){
+        swap(st,ed);
+        st++;ed--;
+    }
+}
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> a[]={<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">6</span>,<span class="hljs-number">7</span>,<span class="hljs-number">8</span>,<span class="hljs-number">9</span>,<span class="hljs-number">10</span>};
+    <span class="hljs-type">int</span> n=<span class="hljs-keyword">sizeof</span>(a)/<span class="hljs-keyword">sizeof</span>(a[<span class="hljs-number">0</span>]);
+    rev(a,n);
+    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;n;i++)<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d "</span>,a[i]);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="33-实现一个函数，指出指针所指向的字符串中第一次出现字符ch的位置。若没有该字符，返回0">33 实现一个函数，指出指针所指向的字符串中第一次出现字符ch的位置。若没有该字符，返回0.</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span> </span>
+<span class="hljs-type">char</span> *<span class="hljs-title function_">find</span><span class="hljs-params">(<span class="hljs-type">char</span> *s, <span class="hljs-type">char</span> ch)</span>{
+    <span class="hljs-keyword">for</span>(;*s!=<span class="hljs-string">'\0'</span>;s++)<span class="hljs-keyword">if</span>(*s==ch)<span class="hljs-keyword">return</span> (s);
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">NULL</span>;
+}
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">char</span> *p,ch=<span class="hljs-string">'a'</span>;
+    <span class="hljs-type">char</span> str[<span class="hljs-number">30</span>]=<span class="hljs-string">"C program."</span>;
+    p=find(str,ch);
+    <span class="hljs-keyword">if</span>(p==<span class="hljs-number">0</span>)<span class="hljs-built_in">printf</span>(<span class="hljs-string">"Not found!\n"</span>);
+    <span class="hljs-keyword">else</span> <span class="hljs-built_in">printf</span>(<span class="hljs-string">"The position is %d\n"</span>,p-str);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="34-输入10个整数，将最小数与第一个数对换。最大数与最后一个数对换。1读10个数-2处理-3输出">34 输入10个整数，将最小数与第一个数对换。最大数与最后一个数对换。1.读10个数 2.处理 3.输出</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-type">void</span> <span class="hljs-title function_">swap</span><span class="hljs-params">(<span class="hljs-type">int</span> *a,<span class="hljs-type">int</span> *b)</span>{
+    <span class="hljs-type">int</span> t=*a;*a=*b;*b=t;
+}
+<span class="hljs-type">void</span> <span class="hljs-title function_">input</span><span class="hljs-params">(<span class="hljs-type">int</span> a[])</span>{
+    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">10</span>;i++)<span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%d"</span>,&amp;a[i]);
+}
+<span class="hljs-type">void</span> <span class="hljs-title function_">output</span><span class="hljs-params">(<span class="hljs-type">int</span> a[])</span>{
+    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">10</span>;i++)<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d "</span>,a[i]);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"\n"</span>);
+}
+<span class="hljs-type">void</span> <span class="hljs-title function_">handle</span><span class="hljs-params">(<span class="hljs-type">int</span> a[])</span>{
+    <span class="hljs-type">int</span> *M,*m,*p;
+    M=m=a;
+    <span class="hljs-keyword">for</span>(p=a+<span class="hljs-number">1</span>;p&lt;a+<span class="hljs-number">10</span>;p++){
+        <span class="hljs-keyword">if</span>(*p&gt;*M)M=p;
+        <span class="hljs-keyword">if</span>(*p&lt;*m)m=p;
+    }swap(m,a);<span class="hljs-keyword">if</span>(M==a)M=m;
+    swap(M,a+<span class="hljs-number">9</span>);
+}
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> a[<span class="hljs-number">10</span>];input(a);
+    handle(a);output(a);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="35-读年月日，计算是这一年的第多少天？">35 读年月日，计算是这一年的第多少天？</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span> </span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">is</span><span class="hljs-params">(<span class="hljs-type">int</span> year)</span>{
+    <span class="hljs-keyword">return</span> ((year%<span class="hljs-number">4</span>==<span class="hljs-number">0</span>&amp;&amp;year%<span class="hljs-number">100</span>!=<span class="hljs-number">0</span>)||(year%<span class="hljs-number">400</span>==<span class="hljs-number">0</span>));
+}
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> year,month,day;<span class="hljs-type">int</span> total=<span class="hljs-number">0</span>;
+    <span class="hljs-type">int</span> mons[]={<span class="hljs-number">31</span>,<span class="hljs-number">28</span>,<span class="hljs-number">31</span>,<span class="hljs-number">30</span>,<span class="hljs-number">31</span>,<span class="hljs-number">30</span>,<span class="hljs-number">31</span>,<span class="hljs-number">31</span>,<span class="hljs-number">30</span>,<span class="hljs-number">31</span>,<span class="hljs-number">30</span>,<span class="hljs-number">31</span>};
+    <span class="hljs-keyword">if</span>(is(year))mons[<span class="hljs-number">1</span>]=<span class="hljs-number">29</span>;
+    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;month<span class="hljs-number">-1</span>;i++)total+=mons[i];
+    total+=day;
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d年%d月%d日是第%d天"</span>,year,month,day,total);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="36-输入10个学生的成绩，并输出其中的最低分，最高分和平均分">36 输入10个学生的成绩，并输出其中的最低分，最高分和平均分</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> a[<span class="hljs-number">10</span>];
+    <span class="hljs-type">int</span> *p=a;
+    <span class="hljs-type">int</span> i,min,max;
+    <span class="hljs-type">float</span> sum=<span class="hljs-number">0.0</span>;
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">10</span>;i++){
+        <span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%d"</span>,p+i);
+        sum+=*(p+i);
+    }
+    max=a[<span class="hljs-number">0</span>],min=a[<span class="hljs-number">0</span>];
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">1</span>;i&lt;<span class="hljs-number">10</span>;i++){
+        <span class="hljs-keyword">if</span>(*(p+i)&lt;min)min=*(p+i);
+        <span class="hljs-keyword">if</span>(*(p+i)&lt;max)max=*(p+i);
+    }
+    <span class="hljs-type">float</span> avg=sum/<span class="hljs-number">10</span>;
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d %d %.2f\n"</span>,min,max,avg);<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="37-使用指针交换数组a和数组b的对应元素">37 使用指针交换数组a和数组b的对应元素</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span> </span>
+<span class="hljs-type">void</span> <span class="hljs-title function_">in</span><span class="hljs-params">(<span class="hljs-type">int</span>*pa,<span class="hljs-type">int</span>*pb,<span class="hljs-type">int</span> n)</span>{
+    <span class="hljs-type">int</span> t,i;
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">0</span>;i&lt;n;i++,pa++,pb++){
+        t=*pa;*pa=*pb;*pb=t;
+    }
+}
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> a[]={<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>};
+    <span class="hljs-type">int</span> b[]={<span class="hljs-number">11</span>,<span class="hljs-number">12</span>,<span class="hljs-number">13</span>,<span class="hljs-number">14</span>,<span class="hljs-number">15</span>};
+    <span class="hljs-type">int</span> i;in(a,b,<span class="hljs-number">5</span>);
+    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">5</span>;i++)<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%4d"</span>,a[i]);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"\n"</span>);
+    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">5</span>;i++)<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%4d"</span>,b[i]);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="38-结构体判断是一年的第几天">38 结构体判断是一年的第几天</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-class"><span class="hljs-keyword">struct</span> {</span>
+    <span class="hljs-type">int</span> year;<span class="hljs-type">int</span> month;<span class="hljs-type">int</span> day;
+}date;
+<span class="hljs-type">int</span> <span class="hljs-title function_">is</span><span class="hljs-params">(year)</span>{
+    <span class="hljs-keyword">return</span> (year%<span class="hljs-number">4</span>==<span class="hljs-number">0</span>&amp;&amp;year%<span class="hljs-number">100</span>!=<span class="hljs-number">0</span>)||(year%<span class="hljs-number">400</span>==<span class="hljs-number">0</span>);
+}
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> i,tot;
+    <span class="hljs-type">int</span> mons[]={<span class="hljs-number">0</span>,<span class="hljs-number">31</span>,<span class="hljs-number">28</span>,<span class="hljs-number">31</span>,<span class="hljs-number">30</span>,<span class="hljs-number">31</span>,<span class="hljs-number">30</span>,<span class="hljs-number">31</span>,<span class="hljs-number">31</span>,<span class="hljs-number">30</span>,<span class="hljs-number">31</span>,<span class="hljs-number">30</span>,<span class="hljs-number">31</span>};
+    <span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%d,%d,%d"</span>,&amp;date.year,&amp;date.month,&amp;date.day);
+    tot=<span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">1</span>;i&lt;date.month;i++)tot+=mons[i];
+    <span class="hljs-keyword">if</span>(is(date.year)&amp;&amp;date.month&gt;<span class="hljs-number">2</span>)tot++;
+    tot+=date.day;
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"是第%d天\n"</span>,tot);<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="39-求xxyyzz2000的所有解的个数，并把所有的解和解的个数写到文件f3dat中。">39 求x<em>x+y</em>y+z*z=2000的所有解的个数，并把所有的解和解的个数写到文件f3.dat中。</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdlib.h&gt;</span></span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    FILE *fp;<span class="hljs-type">int</span> i,j,k,s=<span class="hljs-number">0</span>;
+    <span class="hljs-keyword">if</span>((sp=fopen(<span class="hljs-string">"f3.dat"</span>,<span class="hljs-string">"w"</span>))==<span class="hljs-literal">NULL</span>){<span class="hljs-built_in">printf</span>(<span class="hljs-string">"File open error.\n"</span>);<span class="hljs-built_in">exit</span>(<span class="hljs-number">1</span>);}
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">50</span>;i++) <span class="hljs-keyword">for</span>(j=<span class="hljs-number">0</span>;j&lt;<span class="hljs-number">50</span>;j++)<span class="hljs-keyword">for</span>(k=<span class="hljs-number">0</span>;k&lt;<span class="hljs-number">50</span>;k++){
+        <span class="hljs-keyword">if</span>(x*x+y*y+z*z==<span class="hljs-number">2000</span>){
+            s++;<span class="hljs-built_in">fprintf</span>(fp,<span class="hljs-string">"%d%d%d"</span>,i,j,k);
+        }
+    }
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"一共%d个解\n"</span>,s);<span class="hljs-built_in">fprintf</span>(fp,<span class="hljs-string">"解的个数：%d"</span>,s);fclose(fp);<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="40-通过键盘读入10个整数并写到f2dat文件中。">40 通过键盘读入10个整数并写到f2.dat文件中。</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdlib.h&gt;</span></span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    FILE *fp;<span class="hljs-type">int</span> i,d[<span class="hljs-number">10</span>];
+    <span class="hljs-keyword">if</span>((fp=fopen(<span class="hljs-string">"f2.dat"</span>,<span class="hljs-string">"w"</span>))==<span class="hljs-literal">NULL</span>){
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">"File open error.\n"</span>);<span class="hljs-built_in">exit</span>(<span class="hljs-number">1</span>);
+    }
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">10</span>;i++){
+        <span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%d"</span>,&amp;d[i]);<span class="hljs-built_in">fprintf</span>(fp,<span class="hljs-string">"%d "</span>,d[i]);
+    }fclose(fp);<span class="hljs-built_in">printf</span>(<span class="hljs-string">"\n"</span>);<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="41-读出并显示f2dat中的10个数。">41 读出并显示f2.dat中的10个数。</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdlib.h&gt;</span></span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    FILE *fp;<span class="hljs-type">int</span> d[<span class="hljs-number">10</span>],i;
+    <span class="hljs-keyword">if</span>((fp=fopen(<span class="hljs-string">"f2.dat"</span>,<span class="hljs-string">"r"</span>))==<span class="hljs-literal">NULL</span>){
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">"File open error.\n"</span>);<span class="hljs-built_in">exit</span>(<span class="hljs-number">1</span>);
+    }
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">10</span>;i++){
+        <span class="hljs-built_in">fscanf</span>(fp,<span class="hljs-string">"%d"</span>,&amp;d[i]);<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d "</span>,d[i]);
+    }fclose(fp);<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="42-找出最小的被35，79除后余数为13，57的数，已格式d写到文件f3dat中">42 找出最小的被3,5，7,9除后余数为1,3，5,7的数，已格式"%d"写到文件f3.dat中.</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdlib.h&gt;</span></span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    FILE *fp=fopen(<span class="hljs-string">"f3.dat"</span>,<span class="hljs-string">"w"</span>);
+    <span class="hljs-keyword">if</span>(fp==<span class="hljs-literal">NULL</span>){
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">"File open error.\n"</span>);<span class="hljs-built_in">exit</span>(<span class="hljs-number">1</span>);
+    }
+    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">32767</span>;i++)<span class="hljs-keyword">if</span>(i%<span class="hljs-number">3</span>==<span class="hljs-number">1</span>&amp;&amp;i%<span class="hljs-number">5</span>==<span class="hljs-number">3</span>&amp;&amp;i%<span class="hljs-number">7</span>==<span class="hljs-number">5</span>&amp;&amp;i%<span class="hljs-number">9</span>==<span class="hljs-number">7</span>){
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d\n"</span>,i);<span class="hljs-built_in">fprintf</span>(fp,<span class="hljs-string">"%d"</span>,i);<span class="hljs-keyword">break</span>;
+    }fclose(fp);<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="43-找出61000之间所有的完数，写入f3dat中。完数：某数等于其因子之和">43 找出6~1000之间所有的完数，写入f3.dat中。(完数：某数等于其因子之和)</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdlib.h&gt;</span></span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">cal</span><span class="hljs-params">(<span class="hljs-type">int</span> n)</span>{
+    <span class="hljs-type">int</span> sum=<span class="hljs-number">1</span>;
+    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">2</span>;i*i&lt;=n;i++){
+        <span class="hljs-keyword">if</span>(n%i==<span class="hljs-number">0</span>){
+            sum+=i;
+            <span class="hljs-keyword">if</span>(i!=n/i)sum+=n/i;
+        }
+    }<span class="hljs-keyword">return</span> sum;
+}
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    FILE*fp=fopen(<span class="hljs-string">"f3.dat"</span>,<span class="hljs-string">"w"</span>) ;<span class="hljs-type">int</span> i,j,k,a[<span class="hljs-number">100</span>],sum=<span class="hljs-number">0</span>;
+    <span class="hljs-keyword">if</span>(fp==<span class="hljs-literal">NULL</span>){
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">"File open error."</span>);<span class="hljs-built_in">exit</span>(<span class="hljs-number">1</span>);
+    }
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">6</span>;i&lt;=<span class="hljs-number">1000</span>;i++){
+        <span class="hljs-keyword">if</span>(cal(i)==i){
+            <span class="hljs-built_in">fprintf</span>(fp,<span class="hljs-string">"%d\n"</span>,i);
+        }
+    }fclose(fp);<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="44-从test1txt和test2txt中读数据，然后写入testtxt中">44 从test1.txt和test2.txt中读数据，然后写入test.txt中.</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span> </span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    FILE *fp,*fg; <span class="hljs-type">int</span> ch,i=<span class="hljs-number">1</span>;
+    fg=fopen(<span class="hljs-string">"test.txt"</span>,<span class="hljs-string">"w"</span>);
+    <span class="hljs-keyword">while</span>(i&lt;=<span class="hljs-number">2</span>){
+        <span class="hljs-keyword">if</span>(i==<span class="hljs-number">1</span>)fp=fopen(<span class="hljs-string">"test1.txt"</span>,<span class="hljs-string">"r"</span>);
+        <span class="hljs-keyword">else</span> fp=fopen(<span class="hljs-string">"test2.txt"</span>,<span class="hljs-string">"r"</span>);
+        <span class="hljs-keyword">while</span>((ch=fgetc(fp))!=EOF)fputc(ch,fg);
+        fclose(fp);i++;
+    }fclose(fg); <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="45-gdp年增长为10，计算10年好偶增长多少百分比。p1rn-224">45 GDP年增长为10%，计算10年好偶增长多少百分比。p=(1+r)^n (2^2=4)</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span> </span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;math.h&gt;</span></span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">float</span> p,r,n;r=<span class="hljs-number">0.1</span>;
+    n=<span class="hljs-number">10</span>;p=<span class="hljs-built_in">pow</span>(<span class="hljs-number">1</span>+r,n);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"p=%f\n"</span>,p);<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="46-判断闰年">46 判断闰年</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span> </span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> year;<span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%d"</span>,&amp;year);
+    <span class="hljs-keyword">if</span>((year%<span class="hljs-number">4</span>==<span class="hljs-number">0</span>&amp;&amp;year%<span class="hljs-number">100</span>!=<span class="hljs-number">0</span>)||(year%<span class="hljs-number">400</span>==<span class="hljs-number">0</span>)){
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d年是闰年\n"</span>,year);
+    }<span class="hljs-keyword">else</span>{
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d年不是闰年\n"</span>,year);
+    }<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>; 
+}</code></pre>
+<h2 id="47-读一个数，可整除3，打印yes否则no">47 读一个数，可整除3，打印yes,否则no.</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span> </span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> n;<span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%d"</span>,&amp;n);
+    <span class="hljs-keyword">if</span>(n%<span class="hljs-number">3</span>==<span class="hljs-number">0</span>)<span class="hljs-built_in">printf</span>(<span class="hljs-string">"yes\n"</span>);
+    <span class="hljs-keyword">else</span> <span class="hljs-built_in">printf</span>(<span class="hljs-string">"no\n"</span>);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>; 
+}</code></pre>
+<h2 id="48-求1234100">48 求1+2+3+4+…+100</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span> </span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> i,sum=<span class="hljs-number">0</span>;
+    <span class="hljs-keyword">while</span>(i&lt;=<span class="hljs-number">100</span>){
+        sum=sum+i;i++;
+    }<span class="hljs-built_in">printf</span>(<span class="hljs-string">"sum=%d\n"</span>,sum);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>; 
+}</code></pre>
+<h2 id="49-求12223242n2">49 求1^2+2^2+3^2+4^2+..+n^2</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span> </span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> i,n;<span class="hljs-type">long</span> <span class="hljs-type">long</span> sum=<span class="hljs-number">0</span>;
+    <span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%d"</span>,&amp;n);
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">1</span>;i&lt;=n;i++){
+        sum+=(<span class="hljs-type">long</span> <span class="hljs-type">long</span>)i*i;
+    }<span class="hljs-built_in">printf</span>(<span class="hljs-string">"sum=%lld\n"</span>,sum);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>; 
+}</code></pre>
+<h2 id="50-盒子有12个球，3个红，3个白，6个黑。从中任取8个球。共有多少种搭配">50 盒子有12个球，3个红，3个白，6个黑。从中任取8个球。共有多少种搭配</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span> </span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> i,j,k,num=<span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">0</span>;i&lt;=<span class="hljs-number">3</span>;i++)<span class="hljs-keyword">for</span>(j=<span class="hljs-number">0</span>;j&lt;=<span class="hljs-number">3</span>;j++){
+        k=<span class="hljs-number">8</span>-i-j;<span class="hljs-keyword">if</span>(<span class="hljs-number">0</span>&lt;=k&amp;&amp;k&lt;=<span class="hljs-number">6</span>)num++;
+    }<span class="hljs-built_in">printf</span>(<span class="hljs-string">"共有%d个\n"</span>,num);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>; 
+}</code></pre>
+<h2 id="51-判断素数">51 判断素数</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span> </span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;math.h&gt;</span></span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> n,i,k;<span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%d"</span>,&amp;n);
+    k=<span class="hljs-built_in">sqrt</span>(n);
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">2</span>;i&lt;=k;i++)<span class="hljs-keyword">if</span>(n%i==<span class="hljs-number">0</span>)<span class="hljs-keyword">break</span>;
+    <span class="hljs-keyword">if</span>(i&lt;=k)<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d不是素数\n"</span>,n);
+    <span class="hljs-keyword">else</span> <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d 是素数\n"</span>,n) ;
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="52-求100200之间的全部素数">52 求100~200之间的全部素数</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span> </span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;math.h&gt;</span></span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">is</span><span class="hljs-params">(<span class="hljs-type">int</span> n)</span>{
+    <span class="hljs-keyword">if</span>(n&lt;=<span class="hljs-number">1</span>)<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">2</span>;i&lt;=<span class="hljs-built_in">sqrt</span>(n);i++){
+        <span class="hljs-keyword">if</span>(n%i==<span class="hljs-number">0</span>)<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+    }<span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+}
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">100</span>;i&lt;=<span class="hljs-number">200</span>;i++){
+        <span class="hljs-keyword">if</span>(is(i)){
+            <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d "</span>,i);
+        }
+    }<span class="hljs-built_in">printf</span>(<span class="hljs-string">"\n"</span>);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="53-一个分数序列21325385138求前20项之和。">53 一个分数序列2/1,3/2,5/3,8/5,13/8求前20项之和。</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> n,t,num=<span class="hljs-number">20</span>;
+    <span class="hljs-type">float</span> a=<span class="hljs-number">2</span>,b=<span class="hljs-number">1</span>,s=<span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span>(n=<span class="hljs-number">1</span>;n&lt;=num;n++){
+        s=s+a/b;t=a;a=a+b;b=t;
+    }<span class="hljs-built_in">printf</span>(<span class="hljs-string">"sum is %f\n"</span>,s);<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="54-求1300之间所有奇数和，偶数和。">54 求1~300之间所有奇数和，偶数和。</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> i,s1=<span class="hljs-number">0</span>,s2=<span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">1</span>;i&lt;=<span class="hljs-number">300</span>;i++){
+        <span class="hljs-keyword">if</span>(i%<span class="hljs-number">2</span>==<span class="hljs-number">0</span>)s2+=i;
+        <span class="hljs-keyword">else</span> s1+=i;
+    }
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"奇数之和:%d\n"</span>,s1);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"偶数之和:%d\n"</span>,s2);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="55-输出fibonacci数列的前20个数">55 输出FIbonacci数列的前20个数</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> i;<span class="hljs-type">int</span> f[<span class="hljs-number">20</span>] ={<span class="hljs-number">1</span>,<span class="hljs-number">1</span>};
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">2</span>;i&lt;<span class="hljs-number">20</span>;i++){
+        f[i]=f[i<span class="hljs-number">-2</span>]+f[i<span class="hljs-number">-1</span>];
+    }
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">20</span>;i++){
+        <span class="hljs-keyword">if</span>(i%<span class="hljs-number">10</span>==<span class="hljs-number">0</span>)<span class="hljs-built_in">printf</span>(<span class="hljs-string">"\n"</span>);
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%6d"</span>,f[i]);
+    }   <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="56-输出23的转置矩阵。">56 输出2*3的转置矩阵。</h2>
+<pre><code class="hljs c language-c"><span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">2</span>; i++) {
+    <span class="hljs-keyword">for</span> (j = <span class="hljs-number">0</span>; j &lt; <span class="hljs-number">3</span>; j++) {
+        transposed[j][i] = matrix[i][j];
+    }
+}</code></pre>
+<h2 id="57-求xy最小值">57 求x,y最小值</h2>
+<pre><code class="hljs c language-c"><span class="hljs-type">int</span> <span class="hljs-title function_">min</span><span class="hljs-params">(<span class="hljs-type">int</span> x,<span class="hljs-type">int</span> y)</span> {
+    <span class="hljs-type">int</span> z;z=x&lt;y?x:y; 
+    <span class="hljs-keyword">return</span> z;
+}</code></pre>
+<h2 id="58-读10个数，要求输出其中值最大的元素和该数的位置。">58 读10个数，要求输出其中值最大的元素和该数的位置。</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> a[<span class="hljs-number">10</span>],m,idx,i;
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">10</span>;i++)<span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%d"</span>,&amp;a[i]);
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">1</span>,m=a[<span class="hljs-number">0</span>],idx=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">10</span>;i++){
+        <span class="hljs-keyword">if</span>(a[i]&gt;m){
+            m=a[i];idx=i;
+        }
+    }<span class="hljs-built_in">printf</span>(<span class="hljs-string">"最大值是：%d,它是第%d个数\n"</span>,m,idx+<span class="hljs-number">1</span>);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="59-有一个一维数组放10个人成绩，求平均成绩。">59 有一个一维数组放10个人成绩，求平均成绩。</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-type">float</span> <span class="hljs-title function_">average</span><span class="hljs-params">(<span class="hljs-type">float</span> a[])</span>{
+    <span class="hljs-type">int</span> i;<span class="hljs-type">float</span> aver,sum=a[<span class="hljs-number">0</span>];
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">1</span>;i&lt;<span class="hljs-number">10</span>;i++)sum=sum+a[i];
+    aver=sum/<span class="hljs-number">10</span>;
+    <span class="hljs-keyword">return</span> aver;
+}
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">float</span> a[<span class="hljs-number">10</span>],aver;
+    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">10</span>;i++)<span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%f"</span>,&amp;a[i]);
+    aver=average(a);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"平均值是%f\n"</span>,aver);<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="60-有两个班，人数分别是510，求平均值">60 有两个班，人数分别是5,10，求平均值</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span> </span>
+<span class="hljs-type">float</span> <span class="hljs-title function_">average</span><span class="hljs-params">(<span class="hljs-type">float</span> a[],<span class="hljs-type">int</span> n)</span>{
+    <span class="hljs-type">float</span> aver,sum=a[<span class="hljs-number">0</span>];
+    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">1</span>;i&lt;<span class="hljs-number">10</span>;i++){
+        sum=sum+a[i];
+    }aver=sum/n;
+    <span class="hljs-keyword">return</span> aver;
+}
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">float</span> a[<span class="hljs-number">5</span>]={<span class="hljs-number">98.5</span>,<span class="hljs-number">97</span>,<span class="hljs-number">91</span>,<span class="hljs-number">60</span>,<span class="hljs-number">55</span>};
+    <span class="hljs-type">float</span> b[<span class="hljs-number">10</span>]={<span class="hljs-number">67</span>,<span class="hljs-number">68</span>,<span class="hljs-number">13</span>,<span class="hljs-number">34</span>,<span class="hljs-number">65</span>,<span class="hljs-number">45</span>,<span class="hljs-number">90</span>,<span class="hljs-number">76</span>,<span class="hljs-number">98</span>,<span class="hljs-number">54</span>};
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"平均分%6.2f\n"</span>,average(a,<span class="hljs-number">5</span>));
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"平均分%6.2f\n"</span>,average(b,<span class="hljs-number">10</span>));
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="61-实现isprime函数判断素数，是返回1，否则0">61 实现isprime函数判断素数，是返回1，否则0.</h2>
+<pre><code class="hljs c language-c"><span class="hljs-type">int</span> <span class="hljs-title function_">isprime</span><span class="hljs-params">(<span class="hljs-type">int</span> n)</span>{
+    <span class="hljs-keyword">if</span>(n&lt;=<span class="hljs-number">1</span>)<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">2</span>;i&lt;=<span class="hljs-built_in">sqrt</span>(n);i++)<span class="hljs-keyword">if</span>(n%i==<span class="hljs-number">0</span>)<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+}</code></pre>
+<h2 id="62-将字符串a复制给b然后输出字符串b">62 将字符串a复制给b,然后输出字符串b.</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span> </span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">char</span> a[]=<span class="hljs-string">"I am student"</span>,b[<span class="hljs-number">20</span>];
+    <span class="hljs-type">int</span> i;
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">0</span>;a[i]!=<span class="hljs-string">'\0'</span>;i++){
+        b[i]=a[i];
+    }b[i]=<span class="hljs-string">'\0'</span>;
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%s"</span>,b);<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="63-读10个数并写到f1dat文件。">63 读10个数并写到f1.dat文件。</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span> </span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdlib.h&gt;</span></span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    FILE *fp;<span class="hljs-type">int</span> i,d[<span class="hljs-number">10</span>];
+    fp=fopen(<span class="hljs-string">"f1.dat"</span>,<span class="hljs-string">"w+"</span>);
+    <span class="hljs-keyword">if</span>(fp==<span class="hljs-literal">NULL</span>){
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">"File open error"</span>);<span class="hljs-built_in">exit</span>(<span class="hljs-number">1</span>) ;
+    }
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">10</span>;i++){
+        <span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%d"</span>,&amp;d[i]);<span class="hljs-built_in">fprintf</span>(fp,<span class="hljs-string">"%d"</span>,d[i]);
+    }fclose(fp);<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="64-读一个数，判断它是不是3和5的倍数。是yes否则no">64 读一个数，判断它是不是3和5的倍数。是yes,否则no.</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span> </span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdlib.h&gt;</span></span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> x;<span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%d"</span>,&amp;x);
+    <span class="hljs-keyword">if</span>(x%<span class="hljs-number">3</span>==<span class="hljs-number">0</span>&amp;&amp;x%<span class="hljs-number">5</span>==<span class="hljs-number">0</span>)<span class="hljs-built_in">printf</span>(<span class="hljs-string">"yes\n"</span>);
+    <span class="hljs-keyword">else</span> <span class="hljs-built_in">printf</span>(<span class="hljs-string">"no\n"</span>);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}        </code></pre>
+<h2 id="65-36块砖，由男，女，小孩共36人。男搬4，女搬32个小孩搬1">65 36块砖，由男，女，小孩共36人。男搬4，女搬3,2个小孩搬1.</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span> </span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> m,w,c;
+    <span class="hljs-keyword">for</span>(m=<span class="hljs-number">0</span>;m&lt;<span class="hljs-number">9</span>;m++)<span class="hljs-keyword">for</span>(w=<span class="hljs-number">0</span>;w&lt;<span class="hljs-number">12</span>;w++){
+        c=<span class="hljs-number">36</span>-w-m;
+        <span class="hljs-keyword">if</span>((<span class="hljs-number">4</span>*m+<span class="hljs-number">3</span>*w+c/<span class="hljs-number">2</span>==<span class="hljs-number">36</span>)&amp;&amp;(c%<span class="hljs-number">2</span>==<span class="hljs-number">0</span>)){
+            <span class="hljs-built_in">printf</span>(<span class="hljs-string">"男%d个，女%d个，小孩%d个\n"</span>,m,w,c);
+        }
+    }<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="66-给我一个5位数，判断是不是回文。">66 给我一个5位数，判断是不是回文。</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span> </span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">r</span><span class="hljs-params">(<span class="hljs-type">int</span> x)</span> {
+    <span class="hljs-type">int</span> c=<span class="hljs-number">0</span>;
+    <span class="hljs-keyword">while</span>(x!=<span class="hljs-number">0</span>){
+        c=c*<span class="hljs-number">10</span>+x%<span class="hljs-number">10</span>;
+        x/=<span class="hljs-number">10</span>;
+    }<span class="hljs-keyword">return</span> c;
+}
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> num;<span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%d"</span>,&amp;num);
+    <span class="hljs-keyword">if</span>(r(num)==num)<span class="hljs-built_in">printf</span>(<span class="hljs-string">"是回文"</span>); 
+    <span class="hljs-keyword">else</span> <span class="hljs-built_in">printf</span>(<span class="hljs-string">"不是回文"</span>); 
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="67-读若干数，其值在04范围内，用-1作为-1作为结束。">67 读若干数，其值在0~4范围内，用-1作为-1作为结束。</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span> </span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> a[<span class="hljs-number">5</span>]={<span class="hljs-number">0</span>};
+    <span class="hljs-type">int</span> x;
+    <span class="hljs-keyword">while</span>(<span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%d"</span>,&amp;x)==<span class="hljs-number">1</span>&amp;&amp;x!=<span class="hljs-number">-1</span>)<span class="hljs-keyword">if</span>(x&gt;=<span class="hljs-number">0</span>&amp;&amp;x&lt;=<span class="hljs-number">4</span>)a[x]++;
+    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">5</span>;i++)<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d有%d个\n"</span>,i,a[i]);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="68-共30个学生，统计30个学生的成绩，并输出最高分。">68 共30个学生，统计30个学生的成绩，并输出最高分。</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span> </span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> a[<span class="hljs-number">30</span>];<span class="hljs-type">int</span> i,max;
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">30</span>;i++)<span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%d"</span>,&amp;a[i]);
+    max=a[<span class="hljs-number">0</span>];
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">1</span>;i&lt;<span class="hljs-number">30</span>;i++)<span class="hljs-keyword">if</span>(a[i]&gt;max)max=a[i];
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"最高分是%d\n"</span>,max);<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="69-6个评委给一人打分928566899579去掉一个最高分和一个最低分，求平均分。">69 6个评委给一人打分92,85,66,89,95,79.去掉一个最高分和一个最低分，求平均分。</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span> </span>
+<span class="hljs-type">void</span> <span class="hljs-title function_">sort</span><span class="hljs-params">(<span class="hljs-type">int</span> a[],<span class="hljs-type">int</span> n)</span>{
+    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;n<span class="hljs-number">-1</span>;i++){
+        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> j=i+<span class="hljs-number">1</span>;j&lt;n;j++){
+            <span class="hljs-keyword">if</span>(a[i]&gt;a[j]){
+                <span class="hljs-type">int</span> t=a[i];a[i]=a[j];a[j]=t;
+            }
+        }
+    }
+}
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> a[]={<span class="hljs-number">92</span>,<span class="hljs-number">85</span>,<span class="hljs-number">66</span>,<span class="hljs-number">89</span>,<span class="hljs-number">95</span>,<span class="hljs-number">79</span>};<span class="hljs-type">int</span> n=<span class="hljs-keyword">sizeof</span>(a)/<span class="hljs-keyword">sizeof</span>(a[<span class="hljs-number">0</span>]);
+    sort(a,n);<span class="hljs-type">int</span> sum=<span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">1</span>;i&lt;n<span class="hljs-number">-1</span>;i++)sum+=a[i];
+    <span class="hljs-type">double</span> avg=(<span class="hljs-type">double</span>)sum/(n<span class="hljs-number">-2</span>);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%5.2f\n"</span>,avg);<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="70-读5个字符串找出最长的一个字符串并输出。">70 读5个字符串找出最长的一个字符串并输出。</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span> </span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;string.h&gt;</span></span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">char</span> strings[<span class="hljs-number">5</span>][<span class="hljs-number">100</span>];
+    <span class="hljs-type">int</span> max_len=<span class="hljs-number">0</span>,max_idx=<span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">5</span>;i++)<span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%s"</span>,strings[i]);
+    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">5</span>;i++){
+        <span class="hljs-type">int</span> len=<span class="hljs-built_in">strlen</span>(strings[i]);
+        <span class="hljs-keyword">if</span>(len&gt;max_len){max_len=len;max_idx=i;
+        }
+    }<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%s\n,strings[max_idx]"</span>);<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="71-输出26个大写英文字母的ascii码值，要求3个数一行。">71 输出26个大写英文字母的ASCII码值，要求3个数一行。</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span> </span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> i;<span class="hljs-type">char</span> ch=<span class="hljs-string">'A'</span>;
+    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">1</span>;i&lt;=<span class="hljs-number">26</span>;i++){
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%c:%d "</span>,ch,ch);ch++;
+        <span class="hljs-keyword">if</span>(i%<span class="hljs-number">3</span>==<span class="hljs-number">0</span>)<span class="hljs-built_in">printf</span>(<span class="hljs-string">"\n"</span>);
+    }<span class="hljs-built_in">printf</span>(<span class="hljs-string">"\n"</span>);<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="72-数组a12345678910球a中偶数的个数和所有偶数的平均值。">72 数组a={1,2,3,4,5,6,7,8,9,10}.球a中偶数的个数和所有偶数的平均值。</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span> </span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> a[]={<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">6</span>,<span class="hljs-number">7</span>,<span class="hljs-number">8</span>,<span class="hljs-number">9</span>,<span class="hljs-number">10</span>};
+    <span class="hljs-type">int</span> n=<span class="hljs-keyword">sizeof</span>(a)/<span class="hljs-keyword">sizeof</span>(a[<span class="hljs-number">0</span>]);
+    <span class="hljs-type">double</span>  avg=<span class="hljs-number">0</span>;<span class="hljs-type">int</span> cnt=<span class="hljs-number">0</span>,sum=<span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;n;i++){
+        <span class="hljs-keyword">if</span>(a[i]%<span class="hljs-number">2</span>==<span class="hljs-number">0</span>){
+            cnt++;sum+=a[i];
+        }
+    }
+    <span class="hljs-keyword">if</span>(cnt&gt;<span class="hljs-number">0</span>) {
+        avg=sum/cnt;<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d,%f\n"</span>,cnt,avg);
+    }<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="73-a-eb-fv-zw-a小写字母同样交换。china-glmre">73 A-&gt;E,B-&gt;F,..,V-&gt;Z,W-&gt;A.小写字母同样交换。China-&gt;Glmre</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span> </span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">char</span> c;
+    <span class="hljs-keyword">while</span>((c=getchar())!=<span class="hljs-string">'\n'</span>){
+        <span class="hljs-keyword">if</span>((c&gt;=<span class="hljs-string">'a'</span>&amp;&amp;c&lt;=<span class="hljs-string">'z'</span>)||(c&gt;=<span class="hljs-string">'A'</span>&amp;&amp;c&lt;=<span class="hljs-string">'Z'</span>)){
+            <span class="hljs-keyword">if</span>(c&gt;=<span class="hljs-string">'A'</span>&amp;&amp;c&lt;=<span class="hljs-string">'Z'</span>){
+                c=((c-<span class="hljs-string">'A'</span>+<span class="hljs-number">4</span>)%<span class="hljs-number">26</span>)+<span class="hljs-string">'A'</span>;
+            }
+            <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(c&gt;=<span class="hljs-string">'a'</span>&amp;&amp;c&lt;=<span class="hljs-string">'z'</span>){
+                c=((c-<span class="hljs-string">'a'</span>+<span class="hljs-number">4</span>)%<span class="hljs-number">26</span>)+<span class="hljs-string">'a'</span>;
+            }
+        }<span class="hljs-built_in">putchar</span>(c);
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="74-输入10个数，用冒泡法按从小到大顺序排序。">74 输入10个数，用冒泡法按从小到大顺序排序。</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span> </span>
+<span class="hljs-type">void</span> <span class="hljs-title function_">sort</span><span class="hljs-params">(<span class="hljs-type">int</span> a[],<span class="hljs-type">int</span> n)</span>{
+    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;n<span class="hljs-number">-1</span>;i++){
+        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> j=i+<span class="hljs-number">1</span>;j&lt;n;j++){
+            <span class="hljs-keyword">if</span>(a[i]&gt;a[j]){
+                <span class="hljs-type">int</span> t=a[i];a[i]=a[j];a[j]=t;
+            }
+        }
+    }
+}
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> a[<span class="hljs-number">10</span>];<span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">10</span>;i++)<span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%d"</span>,&amp;a[i]);
+    sort(a,<span class="hljs-number">10</span>);<span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">10</span>;i++)<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d "</span>,a[i]);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"\n"</span>);<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="75-1234是4321的反序数。求1999的所有对称数。本身反序数是对称数。">75 1234是4321的反序数。求&lt;=1999的所有对称数。本身=反序数是对称数。</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span> </span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">r</span><span class="hljs-params">(<span class="hljs-type">int</span> n)</span>{
+    <span class="hljs-type">int</span> c=<span class="hljs-number">0</span>;
+    <span class="hljs-keyword">while</span>(n){
+        c=c*<span class="hljs-number">10</span>+n%<span class="hljs-number">10</span>;
+        n/=<span class="hljs-number">10</span>;
+    }<span class="hljs-keyword">return</span> c;
+}
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">10</span>;i&lt;<span class="hljs-number">2000</span>;i++){
+        <span class="hljs-keyword">if</span>(i==r(i))<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d "</span>,i);
+    }<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="76-求一个整数的任意次方的最后三位数。ab1000">76 求一个整数的任意次方的最后三位数。a^b%1000.</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span> </span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> a,b;<span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%d,%d"</span>,&amp;a,&amp;b);
+    <span class="hljs-type">long</span> <span class="hljs-type">long</span> res=<span class="hljs-number">1</span>;
+    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;b;i++)res=(res*a)%<span class="hljs-number">1000</span>;
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"a^b的最后三位数是：%3lld\n"</span>,res);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="77-读一个字符串，统计有多少个单词。（单词之间用空格分隔）。">77 读一个字符串，统计有多少个单词。（单词之间用空格分隔）。</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span> </span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">char</span> s[<span class="hljs-number">100</span>],c1,c2=<span class="hljs-string">' '</span>;
+    <span class="hljs-type">int</span> i=<span class="hljs-number">0</span>,num=<span class="hljs-number">0</span>;
+    gets(s);
+    <span class="hljs-keyword">while</span>(s[i]!=<span class="hljs-string">'\0'</span>){
+        c1=s[i];
+        <span class="hljs-keyword">if</span>(c!=<span class="hljs-string">' '</span>&amp;&amp;c2==<span class="hljs-string">' '</span>)num++;
+        i++;c2=c1;
+    }<span class="hljs-built_in">printf</span>(<span class="hljs-string">"共有%d个单词\n"</span>,num);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="78-读两个整数，计算两个整数的差的绝对值">78 读两个整数，计算两个整数的差的绝对值</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span> </span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;math.h&gt;</span></span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> x,y,z;<span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%d,%d"</span>,&amp;x,&amp;y);
+    z=<span class="hljs-built_in">abs</span>(x-y);<span class="hljs-built_in">printf</span>(<span class="hljs-string">"结果为：%d\n"</span>,z);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="79-12n">79 1!+2!+…+n!</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-type">long</span> <span class="hljs-type">long</span> <span class="hljs-title function_">fac</span><span class="hljs-params">(<span class="hljs-type">int</span> n)</span>{
+    <span class="hljs-keyword">if</span>(n==<span class="hljs-number">0</span>||n==<span class="hljs-number">1</span>) <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+    <span class="hljs-type">long</span> <span class="hljs-type">long</span> res=<span class="hljs-number">1</span>;
+    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">2</span>;i&lt;=n;i++)res*=i;
+    <span class="hljs-keyword">return</span> res;
+}
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> n;<span class="hljs-type">long</span> <span class="hljs-type">long</span> sum=<span class="hljs-number">0</span>;<span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%d"</span>,&amp;n);
+    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">1</span>;i&lt;=n;i++)sum+=fac(i);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"1!+2!+3!+...+n!为：%lld\n"</span>,sum);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="80-输入5个数组元素，将该数组中的值按逆序重新存放后输出">80 输入5个数组元素，将该数组中的值按逆序重新存放后输出</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-type">void</span> <span class="hljs-title function_">swap</span><span class="hljs-params">(<span class="hljs-type">int</span> *a,<span class="hljs-type">int</span> *b)</span>{
+    <span class="hljs-type">int</span> t=*a;*a=*b;*b=t;
+}
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> a[<span class="hljs-number">5</span>];<span class="hljs-type">int</span> i,j;
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">5</span>;i++)<span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%d"</span>,&amp;a[i]);
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">0</span>,j=<span class="hljs-number">4</span>;i&lt;j;i++,j--)swap(&amp;a[i],&amp;a[j]);
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">5</span>;i++)<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d "</span>,a[i]);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="81-求1234n200成立的最小的n值及其1234n的结果。">81 求1+2+3+4+…+n&gt;=200成立的最小的n值及其1+2+3+4+…+n的结果。</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span> </span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> n=<span class="hljs-number">0</span>,sum=<span class="hljs-number">0</span>;
+    <span class="hljs-keyword">while</span>(sum&lt;<span class="hljs-number">200</span>){
+        n++;sum+=n;
+    }<span class="hljs-built_in">printf</span>(<span class="hljs-string">"最小的n值为%d\n"</span>,n);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"1+2+3+...+n的和为%d\n"</span>,sum);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2 id="82-读百分的值。90a8089b7079c6069d60e">82 读百分的值。&gt;90,A.80~89,B.70~79,C.60~69,D.&lt;60,E.</h2>
+<pre><code class="hljs c language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span> </span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>{
+    <span class="hljs-type">int</span> sco;<span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%d"</span>,&amp;sco);
+    <span class="hljs-keyword">if</span>(sco&gt;=<span class="hljs-number">0</span>&amp;&amp;sco&lt;=<span class="hljs-number">100</span>){
+        <span class="hljs-keyword">switch</span>(sco/<span class="hljs-number">10</span>){
+            <span class="hljs-keyword">case</span> <span class="hljs-number">10</span>:
+            <span class="hljs-keyword">case</span> <span class="hljs-number">9</span>: <span class="hljs-built_in">printf</span>(<span class="hljs-string">"A"</span>) ;<span class="hljs-keyword">break</span>;
+            <span class="hljs-keyword">case</span> <span class="hljs-number">8</span>: <span class="hljs-built_in">printf</span>(<span class="hljs-string">"B"</span>) ;<span class="hljs-keyword">break</span>;
+            <span class="hljs-keyword">case</span> <span class="hljs-number">7</span>: <span class="hljs-built_in">printf</span>(<span class="hljs-string">"C"</span>) ;<span class="hljs-keyword">break</span>;
+            <span class="hljs-keyword">case</span> <span class="hljs-number">6</span>: <span class="hljs-built_in">printf</span>(<span class="hljs-string">"D"</span>) ;<span class="hljs-keyword">break</span>;
+            <span class="hljs-keyword">default</span>: <span class="hljs-built_in">printf</span>(<span class="hljs-string">"E"</span>) ;<span class="hljs-keyword">break</span>;
+        }
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre></body></html>
+    </body>
+</html>
